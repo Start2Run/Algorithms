@@ -43,6 +43,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContainerWithMostWater", "s
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContainerWithMostWaterTests", "tests\ContainerWithMostWaterTests\ContainerWithMostWaterTests.csproj", "{51FB3668-6EE5-4D6B-8EF8-D433FF134BCA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FibonacciModified", "src\Fibonacci Modified\FibonacciModified.csproj", "{1A209E52-7B0F-4E2A-82CB-88D3CD5D784E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FibonacciModifiedTests", "tests\FibonacciModifiedTests\FibonacciModifiedTests.csproj", "{B3E2CFE4-311F-4066-ABA3-A418A08D6A9F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -121,6 +125,14 @@ Global
 		{51FB3668-6EE5-4D6B-8EF8-D433FF134BCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{51FB3668-6EE5-4D6B-8EF8-D433FF134BCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{51FB3668-6EE5-4D6B-8EF8-D433FF134BCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A209E52-7B0F-4E2A-82CB-88D3CD5D784E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A209E52-7B0F-4E2A-82CB-88D3CD5D784E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A209E52-7B0F-4E2A-82CB-88D3CD5D784E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A209E52-7B0F-4E2A-82CB-88D3CD5D784E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3E2CFE4-311F-4066-ABA3-A418A08D6A9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3E2CFE4-311F-4066-ABA3-A418A08D6A9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3E2CFE4-311F-4066-ABA3-A418A08D6A9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3E2CFE4-311F-4066-ABA3-A418A08D6A9F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -144,6 +156,8 @@ Global
 		{451E17A5-DA2F-476B-A0D0-3B9FC6264FB5} = {3E04266D-DBB0-49A3-8458-55E1EDD7C6AA}
 		{5B53B785-2C9F-4E0C-B9E3-199D71A8E58A} = {1BFDD22B-728B-42C1-9FDB-4D59A7C12FE7}
 		{51FB3668-6EE5-4D6B-8EF8-D433FF134BCA} = {3E04266D-DBB0-49A3-8458-55E1EDD7C6AA}
+		{1A209E52-7B0F-4E2A-82CB-88D3CD5D784E} = {1BFDD22B-728B-42C1-9FDB-4D59A7C12FE7}
+		{B3E2CFE4-311F-4066-ABA3-A418A08D6A9F} = {3E04266D-DBB0-49A3-8458-55E1EDD7C6AA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2DF10600-3BD0-46EB-AEF0-D1CD6C467681}
