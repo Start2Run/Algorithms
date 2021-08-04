@@ -10,12 +10,8 @@
 namespace UnitTests
 {
     using Helper;
-    using Microsoft.VisualStudio.TestTools.UnitTesting;
     using StringReduction;
-    using Xunit;
-    using Assert = Microsoft.VisualStudio.TestTools.UnitTesting.Assert;
 
-    [TestClass]
     public class StringReductionTests : TestHelper
     {
         #region Public Methods
