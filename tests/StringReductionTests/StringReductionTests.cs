@@ -11,7 +11,6 @@ namespace UnitTests
 {
     using Helper;
     using StringReduction;
-    using Xunit;
 
     public class StringReductionTests : TestHelper
     {
