@@ -7,7 +7,7 @@
 // Last update: 01/03/2021
 // ==========================================================================
 
-namespace UnitTests
+namespace StringReductionUnitTests
 {
     public class TestCaseModel
     {

@@ -54,11 +54,5 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\MaxSubsetSum\MaxSubsetSum.csproj">
-      <Project>{37f7868f-b3ed-4d36-93c4-80a862816fe8}</Project>
-      <Name>MaxSubsetSum</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

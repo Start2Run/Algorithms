@@ -7,7 +7,7 @@
 // Last update: 01/03/2021
 // ==========================================================================
 
-namespace UnitTests.TestCases
+namespace StringReductionUnitTests.TestCases
 {
     public static class TestCase1
     {

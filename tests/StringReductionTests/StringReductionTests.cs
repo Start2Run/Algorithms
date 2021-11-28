@@ -1,18 +1,12 @@
-﻿// ==========================================================================
-// <copyright file="StringReductionTests.cs" company="Genetec">
-//   Copyright (c) 2018 by Genetec
-//   All rights reserved. May be used only in accordance with a valid Source Code License Agreement.
-// </copyright>
-// Created: 01/03/2021
-// Last update: 05/03/2021
-// ==========================================================================
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using StringReduction;
+using System;
+using Xunit;
 
-namespace UnitTests
+namespace StringReductionTests
 {
-    using Helper;
-    using StringReduction;
-
-    public class StringReductionTests : TestHelper
+    [TestClass]
+    public class StringReductionTests : Helper.TestHelper
     {
         #region Public Methods
 
@@ -22,7 +16,7 @@ namespace UnitTests
         {
             var t = new StringReductionHelper();
             var result = t.StringReduction(s);
-            Assert.AreEqual(expected, result);
+            Xunit.Assert.Equal(expected, result);
         }
 
         [Theory]
@@ -31,7 +25,7 @@ namespace UnitTests
         {
             var t = new StringReductionHelper();
             var result = t.StringReduction(s);
-            Assert.AreEqual(expected, result);
+            Xunit.Assert.Equal(expected, result);
         }
 
         [Theory]
@@ -40,7 +34,7 @@ namespace UnitTests
         {
             var t = new StringReductionHelper();
             var result = t.StringReduction(s);
-            Assert.AreEqual(expected, result);
+            Xunit.Assert.Equal(expected, result);
             var reduction = @"ccaacbabbccbcca
                               cbacbabbccbcca
                               cccbabbccbcca

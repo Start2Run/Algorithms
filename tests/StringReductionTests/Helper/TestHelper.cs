@@ -1,18 +1,10 @@
-﻿// ==========================================================================
-// <copyright file="TestHelper.cs" company="Genetec">
-//   Copyright (c) 2018 by Genetec
-//   All rights reserved. May be used only in accordance with a valid Source Code License Agreement.
-// </copyright>
-// Created: 05/03/2021
-// Last update: 05/03/2021
-// ==========================================================================
+﻿using StringReductionUnitTests;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 
-namespace UnitTests.Helper
+namespace StringReductionTests.Helper
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-
     public class TestHelper
     {
         public static IEnumerable<object[]> GetData(string testCaseName)
