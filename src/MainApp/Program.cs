@@ -1,15 +1,14 @@
-﻿namespace MainApp
-{
-    using BenchmarkDotNet.Running;
-    using CoinChange;
+﻿using System.Collections.Generic;
 
+namespace MainApp
+{
     internal static class Program
     {
         public static void Main(string[] args)
         {
-            var coinChange = new CoinChangeHelper();
-            // coinChange.GetWays(166, new long[] { 5, 37, 8, 39, 33, 17, 22, 32, 13, 7, 10, 35, 40, 2, 43, 49, 46, 19, 41, 1, 12, 11, 28 });
-            var summary = BenchmarkRunner.Run<CoinChangeHelper>();
+            //var max = MaxSubsetSum.MaxSubsetSum.GetMaxSubsetSumRec(new int[] { 0, 1, 2, 3, 4 },0, new Dictionary<int, int>());
+            //var max = MaxSubsetSum.MaxSubsetSum.GetMaxSubsetSumRec(new int[] { -2, 1, 3,-4, 5 });
+            var max = MaxSubsetSum.MaxSubsetSum.GetMaxSubsetSumRec(new int[] { 3, 5, - 7, 8, 10 },0, new Dictionary<int, int>());
         }
     }
 }

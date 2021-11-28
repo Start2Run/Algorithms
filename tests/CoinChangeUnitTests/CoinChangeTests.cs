@@ -9,10 +9,9 @@
 
 namespace CoinChangeUnitTests
 {
-    using System.Linq;
     using CoinChange;
+    using Xunit;
 
-    [TestClass]
     public class CoinChangeTests
     {
         #region Public Methods
