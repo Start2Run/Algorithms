@@ -1,11 +1,8 @@
 ﻿namespace Sorting
 {
-    public class MergeSortCountingInversions
+    public static class MergeSortCountingInversions
     {
-        public static long CountInversions(int[] data)
-        {
-            return SortMethod(data, 0, data.Length - 1);
-        }
+        public static long CountInversions(int[] data) => SortMethod(data, 0, data.Length - 1);
 
         private static long SortMethod(int[] numbers, int left, int right)
         {
@@ -25,39 +22,41 @@
         private static long MergeMethod(int[] numbers, int left, int mid, int right)
         {
             long count = 0;
-            var offset = -left;
+
+            var pivot = left;
             var leftEnd = mid - 1;
-            var pivotPosition = left;
-            var n = (right - left + 1);
-            var temp = new int[n];
+            var n = right - left + 1;
+            var array = new int[n];
+            var offset = -left;
 
             while (left <= leftEnd && mid <= right)
             {
                 if (numbers[left] <= numbers[mid])
                 {
-                    temp[offset + pivotPosition++] = numbers[left++];
+                    array[offset+pivot++] = numbers[left++];
                 }
                 else
                 {
-                    temp[offset + pivotPosition++] = numbers[mid++];
-                    count+= (mid - pivotPosition);
+                    array[offset + pivot++] = numbers[mid++];
+                    count += mid - pivot;
                 }
             }
 
             while (left <= leftEnd)
             {
-                temp[offset + pivotPosition++] = numbers[left++];
+                array[offset + pivot++] = numbers[left++];
             }
 
             while (mid <= right)
             {
-                temp[offset + pivotPosition++] = numbers[mid++];
+                array[offset + pivot++] = numbers[mid++];
             }
 
             for (int i = 0; i < n; i++)
             {
-                numbers[right] = temp[offset + right--];
+                numbers[right] = array[offset + right--];
             }
+
             return count;
         }
     }
