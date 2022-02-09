@@ -4,7 +4,7 @@
 // May be used only in accordance with a valid Source Code License Agreement.
 // ==========================================================================
 
-namespace SortingTests
+namespace SortingTests.FraudulentActivityNotifications
 {
     using System.Linq;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -16,10 +16,13 @@ namespace SortingTests
     {
 
         [Theory]
-        [InlineData(new int[] { 2, 3, 4, 2, 3, 6, 8, 4, 5 }, 5, 2)]
-        public void TestMethod(int[] data, int d, int expected)
+        //[InlineData(TestCase1.Data, TestCase1.D, TestCase1.Expected)]
+        [InlineData(TestCase2.Data, TestCase2.D, TestCase2.Expected)]
+        //[InlineData(TestCase3.Data, TestCase3.D, TestCase3.Expected)]
+        //[InlineData(TestCase4.Data, TestCase4.D, TestCase4.Expected)]
+        public void TestMethod(string data, int d, int expected)
         {
-            var result = Sorting.FraudulentActivityNotifications.ActivityNotifications(data.ToList(), d);
+            var result = Sorting.FraudulentActivityNotifications.ActivityNotifications(data.Split(' ').Select(int.Parse).ToList(), d);
             Assert.AreEqual(expected, result);
         }
     }

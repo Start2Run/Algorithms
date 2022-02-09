@@ -62,7 +62,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FraudulentActivityNotificationsTests.cs" />
+    <Compile Include="FraudulentActivityNotifications\FraudulentActivityNotificationsTests.cs" />
+    <Compile Include="FraudulentActivityNotifications\TestCase4.cs" />
+    <Compile Include="FraudulentActivityNotifications\TestCase3.cs" />
+    <Compile Include="FraudulentActivityNotifications\TestCase1.cs" />
+    <Compile Include="FraudulentActivityNotifications\TestCase2.cs" />
     <Compile Include="MergeSortCountingInversionsTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -78,6 +82,7 @@
       <Name>Sorting</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
