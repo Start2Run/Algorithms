@@ -63,6 +63,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FraudulentActivityNotifications\FraudulentActivityNotificationsTests.cs" />
+    <Compile Include="FraudulentActivityNotifications\TestCase6.cs" />
+    <Compile Include="FraudulentActivityNotifications\TestCase5.cs" />
     <Compile Include="FraudulentActivityNotifications\TestCase4.cs" />
     <Compile Include="FraudulentActivityNotifications\TestCase3.cs" />
     <Compile Include="FraudulentActivityNotifications\TestCase1.cs" />
